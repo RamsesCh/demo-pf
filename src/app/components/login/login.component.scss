@@ -1,0 +1,73 @@
+.group-top {
+  background-color: #F2F7FC;
+  height: 160px;
+}
+
+.row-card-img {
+  position: relative;
+  top: -65px;
+  height: 60px;
+}
+
+.input-full-width {
+  width: 100%;
+}
+
+::ng-deep .mat-form-field-infix {
+  border-top: .5em solid transparent !important;
+}
+
+.icon-calendar {
+  vertical-align: baseline !important;
+}
+
+::ng-deep button:focus {
+  outline: none !important;
+}
+
+.country {
+  position: relative;
+
+  img {
+    width: 23px;
+    position: absolute;
+    bottom: 33px;
+    left: 10px;
+  }
+}
+
+.country-img {
+  width: 20px;
+}
+
+::ng-deep .mat-select-trigger {
+  text-align: right;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+  transform: translateY(0%) !important;
+}
+
+::ng-deep .mat-select-arrow {
+  width: 15px !important;
+  height: 8px !important;
+  background: url(/assets/img/arrow_select.svg) no-repeat center center !important;
+  border: none !important;
+}
+
+.footer-login {
+  background-color: #F3F3F3;
+
+  p {
+    font-size: 11px;
+    line-height: 15px;
+
+    a {
+      color: #006FCF;
+    }
+  }
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
+  margin: 0px !important;
+}

@@ -1,0 +1,66 @@
+<div class="container-fluid p-0" *ngIf="!scanComplete">
+  <div class="row mt-3">
+    <div class="col-12">
+      <p class="mb-1">¿Querés continuar con esta foto?</p>
+      <p class="color-light">El documento debe verse claramente</p>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-12 text-center">
+      <img class="img-prev" src="assets/images/FRENTE@3x.svg" alt="">
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-sm-12 text-center">
+      <button class="btn-block text-light" mat-flat-button color="primary" (click)="scannSuccess()">Continuar</button>
+      <button class="btn-block" mat-stroked-button color="primary" (click)="newCapture('rev')">Volver a tomar</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid p-0" *ngIf="scanComplete">
+  <div class="row mt-3">
+    <div class="col-12">
+      <p>Tu DNI fue capturado exitosamente</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="row-container-done">
+        <div class="container-done">
+          <div class="done-icon">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">done</mat-icon>
+          </div>
+        </div>
+      </div>
+      <img class="img-dni" src="assets/images/FRENTE@3x.svg" alt="">
+      <div class="label-dni mt-2">
+        <span class="text-left m-0">Frente</span>
+        <span class="text-right text-primary" (click)="newCapture('front')">Volver a capturar</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="row-container-done">
+        <div class="container-done">
+          <div class="done-icon">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">done</mat-icon>
+          </div>
+        </div>
+      </div>
+      <img class="img-dni" src="assets/images/REVERSOL@3x.svg" alt="">
+      <div class="label-dni mt-2">
+        <span class="text-left m-0">Reverso</span>
+        <span class="text-right text-primary" (click)="newCapture('rev')">Volver a capturar</span>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-sm-12 text-center">
+      <button class="btn-block text-light" mat-flat-button color="primary" (click)="nextStep()">Continuar</button>
+    </div>
+  </div>
+</div>

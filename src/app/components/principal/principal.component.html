@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <app-header></app-header>
+    <app-stepper *ngIf="step !== 'login' && step !== 'privacy'"></app-stepper>
+</div>
+
+<div class="container-fluid">
+  <!--Cargar los componentes steps-->
+  <app-login *ngIf="step == 'login'"></app-login>
+  <app-privacy-notice *ngIf="step == 'privacy'"></app-privacy-notice>
+  <app-scan-indications *ngIf="step == 'indications-scanner'"></app-scan-indications>
+  <app-preview-dni *ngIf="step == 'prev-dni'"></app-preview-dni>
+  <app-terms-conditions-instructions *ngIf="step == 'terms-indications'"></app-terms-conditions-instructions>
+</div>

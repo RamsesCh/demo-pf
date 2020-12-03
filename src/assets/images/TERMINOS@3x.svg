@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="82px" viewBox="0 0 65 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2A5147A6-F0ED-4F9A-93CB-DC07CF9A998A@3x</title>
+    <defs>
+        <linearGradient x1="18.1933132%" y1="-22.6996528%" x2="104.557942%" y2="252.463108%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#E6E8EF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="55" height="72" rx="5"></rect>
+        <filter x="-13.6%" y="-10.4%" width="127.3%" height="120.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.54112885   0 0 0 0 0.54112885   0 0 0 0 0.54112885  0 0 0 0.123442963 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#EFEFEF" offset="0%"></stop>
+            <stop stop-color="#E0E0E0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Original" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ASSETS" transform="translate(-50.000000, -647.000000)">
+            <g id="TERMINOS" transform="translate(55.000000, 652.000000)">
+                <g id="Group-10">
+                    <g id="Rectangle-Copy">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="Group-12" transform="translate(3.728814, 10.666667)" fill="#FF6D6A">
+                        <rect id="Rectangle-Copy-14" x="0" y="0" width="10.3928081" height="2" rx="1"></rect>
+                        <rect id="Rectangle-Copy-14" x="5.32907052e-14" y="6" width="46.6101695" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle-Copy-14" x="5.32907052e-14" y="13" width="46.6101695" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle-Copy-14" x="5.32907052e-14" y="20" width="46.6101695" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle-Copy-14" x="5.32907052e-14" y="39" width="46.6101695" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle-Copy-14" x="5.32907052e-14" y="46" width="46.6101695" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle-Copy-14" x="5.32907052e-14" y="27" width="46.6101695" height="3" rx="1.5"></rect>
+                    </g>
+                </g>
+                <path d="M53.8372093,0 C54.4801642,0 55,0.478698277 55,1.07077246 L55,70.9355262 C54.9931601,71.5213017 54.4733242,72 53.8303694,72 L1.1627907,72 C0.519835841,72 0,71.5213017 0,70.9292275 L0,1.07077246 C0,0.478698277 0.519835841,0 1.1627907,0 L53.8372093,0 Z" id="Path-2" fill="url(#linearGradient-4)" fill-rule="nonzero" opacity="0.62" style="mix-blend-mode: multiply;"></path>
+            </g>
+        </g>
+    </g>
+</svg>

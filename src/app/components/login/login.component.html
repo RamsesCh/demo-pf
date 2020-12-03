@@ -1,0 +1,73 @@
+<div class="row group-top">
+  <div class="col-12 pt-4">
+    <h4 class="mb-0 font-weight-bold">The Platinum Credit Card American Express &reg;</h4>
+    <h5>Solicitud número: 909900992390291 ARG</h5>
+  </div>
+</div>
+<div class="row row-card-img">
+  <div class="col-12 text-center">
+    <img src="assets/images/TDC.png" alt="">
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <p>Ingresá con tus datos para terminar la solicitud.</p>
+  </div>
+</div>
+
+<form [formGroup]="data" (ngSubmit)="submitSolicitud()" autocomplete="off">
+  <div class="row">
+    <div class="col-12">
+      <small class="m-0">Fecha de nacimiento</small>
+      <mat-form-field appearance="outline" class="input-full-width">
+        <input (dateChange)="dateChange($event, inputFecha)" [matDatepicker]="picker" type="hidden" [max]="maxDate">
+        <input #inputFecha maxlength="10" appDateLogin inputmode="tel" type="text" matInput placeholder="DD / MM / AAAA"
+          formControlName="birthdate" [(ngModel)]='birthdate' (keyup)="validar()"
+          oninput=" this.value = this.value.replace(' ',''); this.value = this.value.replace(/[^0-9/ ]/g, '')">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 pr-0">
+      <small class="m-0">País</small>
+      <div class="country">
+        <img [src]="img" alt="logo">
+        <mat-form-field appearance="outline" class="input-full-width">
+          <mat-select [(ngModel)]="countr" (selectionChange)='imgChange($event)' formControlName="country">
+            <mat-option *ngFor="let c of countries; let i = index" [value]="c">
+              <img class="country-img" [src]="c.src" alt="logo"> {{c.viewValue === '+521' ? '+52' : c.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="col-8 pl-2">
+      <small class="m-0">Teléfono movil</small>
+      <mat-form-field appearance="outline" class="input-full-width">
+        <input placeholder="5555555555" matInput type="tel" inputmode="tel" formControlName="phone" [(ngModel)]='phone'
+          maxlength="10"
+          oninput=" this.value = this.value.replace(' ',''); this.value = this.value.replace(/[^0-9 ]/g, '')"
+          (keyup)="validar()">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <small class="font-weight-lighter">Tus datos están protegidos <img src="assets/images/SECURITY@3x.svg"
+          alt=""></small>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-sm-12 text-center">
+      <button type="submit" class="btn-block text-light" mat-flat-button color="primary"
+        [disabled]="data.invalid">Ingresar</button>
+    </div>
+  </div>
+</form>
+<div class="row footer-login mt-3 py-3 px-2">
+  <div class="col-12">
+    <p class="m-0">Consultá nuestro <a>Aviso de privacidad</a>. Si tenés dudas, llamanos al <a> 0810 777 6777</a></p>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="row py-2 bg-color align-items-center">
+  <div class="col-3 text-left text-light p-0">
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" [disabled]="step == 'login'" [ngClass]="{'text-transparent': step == 'login'}">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+  </div>
+  <div class="col-6 text-center">
+    <img src="assets/images/LOGO@3x.svg" alt="">
+  </div>
+  <div class="col-3 text-right text-light p-0">
+    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" [disabled]="step == 'login'" [ngClass]="{'text-transparent': step == 'login'}">
+        <mat-icon>close</mat-icon>
+      </button>
+  </div>
+</div>

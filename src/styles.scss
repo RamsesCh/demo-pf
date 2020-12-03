@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+
+// @font-face {
+//   font-family: 'BentonSansRegular';
+//   src: url('./assets/fonts/BentonSansRegular.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'BentonSansLight';
+//   src: url('./assets/fonts/BentonSans-Light.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'BentonSansBold';
+//   src: url('./assets/fonts/BentonSansBlackRegular.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: "BentonSansMedium";
+//   src: url("assets/fonts/BentonSans-Medium.otf") format("truetype");
+// }
+
+// @font-face {
+//   font-family: 'ProximaNovaSoft-Regular';
+//   src: url('./assets/fonts/sign/ProximaNovaSoft-Regular.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'ProximaNovaSoft-Bold';
+//   src: url('./assets/fonts/sign/ProximaNovaSoft-Bold.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'ProximaNova-Regular';
+//   src: url('./assets/fonts/sign/ProximaNova-Regular.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'ProximaNova-Bold';
+//   src: url('./assets/fonts/sign/ProximaNova-Bold.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'ProximaNova-Semibold';
+//   src: url('./assets/fonts/sign/ProximaNova-Semibold.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'RobotoCondensed-Bold';
+//   src: url('./assets/fonts/sign/RobotoCondensed-Bold.ttf');
+// }
+
+// @font-face {
+//   font-family: 'RobotoCondensed-Regular';
+//   src: url('./assets/fonts/sign/RobotoCondensed-Regular.ttf');
+// }
+
+// @font-face {
+//   font-family: 'HelveticaNeueLight';
+//   src: url('./assets/fonts/sign/HelveticaNeueLight.ttf');
+// }
+
+// @font-face {
+//   font-family: 'BentonSansBlack';
+//   src: url('./assets/fonts/sign/BentonSansBlackRegular.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'Helvetica-Bold';
+//   src: url('./assets/fonts/sign/Helvetica-Bold.ttf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'Helvetica-Regular';
+//   src: url('./assets/fonts/sign/Helvetica-Regular.ttf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'HelveticaNeue-Thin';
+//   src: url('./assets/fonts/sign/HelveticaNeue-Thin.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'HelveticaNeue-Light';
+//   src: url('./assets/fonts/sign/HelveticaNeue-Light.otf') format('opentype');
+// }
+
+// @font-face {
+//   font-family: 'HelveticaNeue-Regular';
+//   src: url('./assets/fonts/sign/HelveticaNeue-Regular.otf') format('opentype');
+// }
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

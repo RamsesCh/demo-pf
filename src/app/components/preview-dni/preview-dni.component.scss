@@ -1,0 +1,40 @@
+.label-dni {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #53565A;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+.img-dni {
+  width: 60%;
+}
+
+.row-container-done {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 40px;
+}
+
+.container-done {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.done-icon {
+  height: 28px;
+  width: 30px;
+  border-radius: 14px;
+  background-color: #6FB4BE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+/* palettes to amex mesa control */
+$mat-amex-blue: (50: #006FCF,
+  100: #00175A,
+  contrast: (50: $dark-primary-text));
+$mat-amex-grey: (50: #D4D5D9,
+  100: #454D55,
+  contrast: (50: $dark-primary-text));
+
+/* themes definition */
+$general-app-primary: mat-palette($mat-amex-blue, 50);
+$general-app-accent: mat-palette($mat-amex-blue, 100);
+$general-app-theme: mat-light-theme($general-app-primary, $general-app-accent);
+
+@include angular-material-theme($general-app-theme);
+
+$login-app-primary: mat-palette($mat-grey, 50);
+$login-app-accent: mat-palette($mat-grey, 400);
+$login-app-theme: mat-light-theme($login-app-primary, $login-app-accent);
+
+.login-theme {
+  @include angular-material-theme($login-app-theme);
+}
+
+.mat-stroked-button:not(.mat-button-disabled) {
+  border-color: #006fcf !important;
+}
+
+.color-light {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.img-prev {
+  width: 100%;
+}
+
+.text-primary {
+  color: #006FCF !important;
+}
